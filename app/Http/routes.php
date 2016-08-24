@@ -85,11 +85,9 @@ Route::get('admin/users/{user}/confirmation', 'UsersController@destroyConfirmati
 Route::delete('admin/users/{user}', 'UsersController@destroy');
 
 // Main app routes
-
 Route::get('/', 'MainController@home');
 Route::get('/products', 'MainController@productList');
 Route::get('/products/{product}', 'MainController@productDetail');
 Route::get('/retailers', 'MainController@retailerList');
 Route::get('/retailers/{retailer}', 'MainController@retailerDetail');
-
 Route::auth();

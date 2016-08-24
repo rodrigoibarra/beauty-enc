@@ -14,7 +14,7 @@ define('LARAVEL_START', microtime(true));
 |
 */
 
-require __DIR__.'/../vendor/autoload.php';
+require dirname(__FILE__).'/../vendor/autoload.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -27,7 +27,7 @@ require __DIR__.'/../vendor/autoload.php';
 |
 */
 
-$compiledPath = DIR.'/../vendor/compiled.php';
+$compiledPath = dirname(__FILE__).'/../vendor/compiled.php';
 
 if (file_exists($compiledPath)) {
     require $compiledPath;
